@@ -6,9 +6,9 @@ wk.register({
   ["<leader>"] = {
     f = {
       f = { "<cmd>Telescope find_files<cr>", "Find File" },
-      r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+      r = { "<cmd>Telescope oldfiles<cr>", "FInd Recent File" },
       b = { "<cmd>Telescope buffers<cr>", "Find Buffer" }, 
-      s = { "<cmd>Telescope spell_suggest<cr>", "Suggest Spelling" }, 
+      s = { "<cmd>Telescope spell_suggest<cr>", "Find Correct Spelling" }, 
     },
   },
 })
