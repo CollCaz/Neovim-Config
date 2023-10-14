@@ -1,7 +1,8 @@
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 
-vim.keymap.set("n", "<leader>a", mark.add_file)
-vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu)
+local wk = require("which-key")
+wk.register({["<leader>a"] = {"<cmd>mark.add_file<cr>", "Mark file for Harpoon"},})
+wk.register({["<C-e>"] = {"<cmd>ui.toggle_quick_menu<cr>", "Harpoon quick menu"},})
 
 -- Go back to primagen if this isn't fast enought
