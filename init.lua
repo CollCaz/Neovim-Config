@@ -1,0 +1,2 @@
+require("CollCaz")
+print("hello")
