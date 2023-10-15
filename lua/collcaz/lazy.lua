@@ -12,3 +12,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("collcaz.plugins")
+require("collcaz.core.plugin_keymaps")
