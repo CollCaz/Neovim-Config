@@ -6,6 +6,11 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
+vim.api.nvim_create_autocmd({ "InsertLeave" }, {
+  command = "write",
+})
+
+
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
