@@ -1,6 +1,8 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2

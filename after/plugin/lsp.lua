@@ -22,20 +22,19 @@ lsp_zero.on_attach(function(client, bufnr)
 
   wk.register({
     ["<leader>"] = {
-      v = {
+      c = {
         name = "+Lsp",
-        f = { "<cmd>Telescope find_files<cr>", "Find File" },
+        d = { function() vim.diagnostic.open_float() end, "Show Diagnostics" },
+        a = { function() vim.lsp.buf.code_action() end, "Code Actions" },
+        r = { function() vim.lsp.buf.rename() end, "Rename" },
+        l = { function() vim.lsp.buf.references() end, "List References" },
       },
     },
   })
-  wk.register({ ["<leader>vws"] = { function() vim.lsp.buf.workspace_symbol("") end, "List Workspace Symbols" }, })
-  --vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol("") end, opts)
-  vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
+  ---@diagnostic disable-next-line: missing-parameter
+  wk.register({ ["<leader>vws"] = { function() vim.lsp.buf.workspace_symbol() end, "List Workspace Symbols" }, })
   vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
   vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
-  vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
-  vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
-  vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 require('mason').setup({})
@@ -58,3 +57,12 @@ require("lspconfig").lua_ls.setup {
     },
   },
 }
+local cmp = require('cmp')
+local cmp_action = require('lsp-zero').cmp_action()
+cmp.setup({
+  mapping = cmp.mapping.preset.insert({
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<Tab>'] = cmp_action.luasnip_supertab(),
+    ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
+  })
+})
