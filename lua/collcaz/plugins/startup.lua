@@ -44,9 +44,10 @@ local settings = {
     margin = 5,
     content = {
       { " Find File", "Telescope find_files", "<leader>ff" },
-      { " Find Word", "Telescope live_grep", "<leader>lg" },
+      { " Find Project", "Telescope projects", "<leader>fp" },
+      { " Find Word", "Telescope live_grep", "<leader>fl" },
       { " Recent Files", "Telescope oldfiles", "<leader>fo" },
-      { " File Browser", "Telescope file_browser", "<leader>fb" },
+      { " File Browser", "Telescope file_browser", "<leader>fe" },
       { " New File", "lua require'startup'.new_file()", "<leader>nf" },
     },
     highlight = "String",

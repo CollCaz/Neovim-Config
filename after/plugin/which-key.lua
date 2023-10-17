@@ -1,4 +1,3 @@
-print("wh")
 local wk = require("which-key")
 wk.register({
   ["<leader>"] = {

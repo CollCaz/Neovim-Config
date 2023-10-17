@@ -31,3 +31,13 @@ vim.opt.updatetime = 50
 --vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+
+-- Vimwiki
+
+vim.g.vimwiki_list = {
+  {
+    path = "/home/Documents/vimwiki",
+    syntax = "markdown",
+    ext = ".md",
+  },
+}

@@ -27,5 +27,8 @@
         "/home/coll/.local/share/nvim/lazy/neodev.nvim/lua",
         "/home/coll/.local/share/nvim/lazy/telescope-file-browser.nvim/lua",
         "/home/coll/.config/nvim/lua"
+    ],
+    "diagnostics.globals": [
+        "vimwikiSubtask"
     ]
 }
