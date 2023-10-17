@@ -14,6 +14,7 @@ wk.register({
       s = { "<cmd>Telescope spell_suggest<cr>", "Find Correct Spelling" },
       g = { "<cmd>Telescope grep_string<cr>", "Find Word Under Cursor" },
       l = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
+      p = { "<cmd>Telescope projects<cr>", "Find Projects" },
     },
   },
 })

@@ -23,10 +23,12 @@ local settings = {
       "",
       "",
       "",
+      "",
+      "",
       "  ██████╗ ██████╗ ██╗     ██╗      ██████╗ █████╗ ███████╗",
-      "|██╔════╝██╔═══██╗██║     ██║     ██╔════╝██╔══██╗╚══███╔╝",
-      "|██║     ██║   ██║██║     ██║     ██║     ███████║  ███╔╝ ",
-      "|██║     ██║   ██║██║     ██║     ██║     ██╔══██║ ███╔╝  ",
+      " ██╔════╝██╔═══██╗██║     ██║     ██╔════╝██╔══██╗╚══███╔╝",
+      " ██║     ██║   ██║██║     ██║     ██║     ███████║  ███╔╝ ",
+      " ██║     ██║   ██║██║     ██║     ██║     ██╔══██║ ███╔╝  ",
       " ╚██████╗╚██████╔╝███████╗███████╗╚██████╗██║  ██║███████╗",
       "  ╚═════╝ ╚═════╝ ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝",
     },
@@ -42,13 +44,16 @@ local settings = {
     fold_section = false,
     title = "Basic Commands",
     margin = 5,
+
     content = {
       { " Find File", "Telescope find_files", "<leader>ff" },
-      { " Find Project", "Telescope projects", "<leader>fp" },
+      { " Find Projects", "Telescope projects", "<leader>fp" },
       { " Find Word", "Telescope live_grep", "<leader>fl" },
-      { " Recent Files", "Telescope oldfiles", "<leader>fo" },
+      { " Recent Files", "Telescope oldfiles", "<leader>fr" },
       { " File Browser", "Telescope file_browser", "<leader>fe" },
       { " New File", "lua require'startup'.new_file()", "<leader>nf" },
+
+      { " Config", "e /home/coll/.config/nvim/init.lua", "<leader>c" },
     },
     highlight = "String",
     default_color = "",
@@ -61,7 +66,7 @@ local settings = {
     fold_section = false,
     title = "Footer",
     margin = 5,
-    content = { "CollCazz" },
+    content = { "NeoVim" },
     highlight = "Number",
     default_color = "",
     oldfiles_amount = 0,
@@ -88,6 +93,10 @@ local settings = {
   parts = { "header", "body", "footer" },
 }
 
+vim.g.startup_bookmarks = {
+  ["I"] = "~/.config/nvim/init.lua",
+  ["K"] = "~/.config/kitty/kitty.conf",
+}
 return {
   "startup-nvim/startup.nvim",
   requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
