@@ -52,12 +52,12 @@ lsp_zero.on_attach(function(client, bufnr)
           end,
           "Rename",
         },
-        l = {
-          function()
-            vim.lsp.buf.references()
-          end,
-          "List References",
-        },
+        --l = {
+        --  function()
+        --    vim.lsp.buf.references()
+        --  end,
+        --  "List References",
+        --},
       },
     },
   })

@@ -20,7 +20,7 @@ return {
     -- Define your formatters
     formatters_by_ft = {
       lua = { "stylua" },
-      gdscritp = { "gdformat" },
+      gdscript = { "gdformat" },
       python = { "isort", "black" },
       javascript = { { "prettierd", "prettier" } },
     },
