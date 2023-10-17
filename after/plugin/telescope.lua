@@ -1,9 +1,9 @@
-local builtin = require('telescope.builtin')
+local builtin = require("telescope.builtin")
 
-require("telescope").load_extension "file_browser"
+require("telescope").load_extension("file_browser")
 
 local wk = require("which-key")
-wk.register({ ["<leader>ff"] = { "<cmd>builtin.find_files<cr>", "Find Files Using Telescope" }, })
+wk.register({ ["<leader>ff"] = { "<cmd>builtin.find_files<cr>", "Find Files Using Telescope" } })
 wk.register({
   ["<leader>"] = {
     f = {

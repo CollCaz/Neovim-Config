@@ -2,37 +2,37 @@ return {
   "WhoIsSethDaniel/mason-tool-installer.nvim",
 
   config = function()
-    require('mason-tool-installer').setup {
+    require("mason-tool-installer").setup({
 
       -- a list of all tools you want to ensure are installed upon
       -- start; they should be the names Mason uses for each tool
       ensure_installed = {
 
         -- you can pin a tool to a particular version
-        { 'golangci-lint',        version = 'v1.47.0' },
+        { "golangci-lint", version = "v1.47.0" },
 
         -- you can turn off/on auto_update per tool
-        { 'bash-language-server', auto_update = true },
+        { "bash-language-server", auto_update = true },
 
-        'lua-language-server',
-        'vim-language-server',
-        'gopls',
-        'stylua',
-        'shellcheck',
-        'editorconfig-checker',
-        'gofumpt',
-        'golines',
-        'gomodifytags',
-        'gotests',
-        'impl',
-        'json-to-struct',
-        'luacheck',
-        'misspell',
-        'revive',
-        'shellcheck',
-        'shfmt',
-        'staticcheck',
-        'vint',
+        "lua-language-server",
+        "vim-language-server",
+        "gopls",
+        "stylua",
+        "shellcheck",
+        "editorconfig-checker",
+        "gofumpt",
+        "golines",
+        "gomodifytags",
+        "gotests",
+        "impl",
+        "json-to-struct",
+        "luacheck",
+        "misspell",
+        "revive",
+        "shellcheck",
+        "shfmt",
+        "staticcheck",
+        "vint",
       },
 
       -- if set to true this will check each tool for updates. If updates
@@ -60,6 +60,6 @@ return {
       -- effect when running manually via ':MasonToolsInstall' etc....
       -- Default: nil
       debounce_hours = 5, -- at least 5 hours between attempts to install/update
-    }
-  end
+    })
+  end,
 }
