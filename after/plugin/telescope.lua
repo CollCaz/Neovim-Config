@@ -1,3 +1,4 @@
+---@diagnostic disable-next-line: unused-local
 local builtin = require("telescope.builtin")
 
 require("telescope").load_extension("file_browser")
