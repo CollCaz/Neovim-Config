@@ -21,3 +21,28 @@ vim.keymap.set("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 
 -- save file
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
+
+-- NeoVide
+if vim.g.neovide then
+  local map = vim.keymap.set
+
+  local function neovideScale(amount)
+    local temp = vim.g.neovide_scale_factor + amount
+
+    if temp < 0.5 then
+      return
+    end
+
+    vim.g.neovide_scale_factor = temp
+  end
+
+  map("n", "<C-=>", function()
+    neovideScale(0.1)
+    print(vim.g.neovide_scale_factor)
+  end)
+
+  map("n", "<C-->", function()
+    neovideScale(-0.1)
+    print(vim.g.neovide_scale_factor)
+  end)
+end

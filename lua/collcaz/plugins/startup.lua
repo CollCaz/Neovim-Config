@@ -43,12 +43,11 @@ local settings = {
     content = {
       { " Find File", "Telescope find_files", "<leader>ff" },
       { " Find Projects", "Telescope projects", "<leader>fp" },
-      { " Find Word", "Telescope live_grep", "<leader>fl" },
-      { " Recent Files", "Telescope oldfiles", "<leader>fr" },
       { " File Browser", "Telescope file_browser", "<leader>fe" },
+      { " Recent Files", "Telescope oldfiles", "<leader>fr" },
       { " New File", "lua require'startup'.new_file()", "<leader>nf" },
-
-      { " Config", "e /home/coll/.config/nvim/init.lua", "<leader>c" },
+      { "漣Config", "e /home/coll/.config/nvim/init.lua", "<leader>c" },
+      { " quit", "quit", "<leader>qq" },
     },
     highlight = "String",
     default_color = "",
