@@ -2,6 +2,7 @@
 local builtin = require("telescope.builtin")
 
 require("telescope").load_extension("file_browser")
+--require("telescope").load_extension("notify")
 
 local wk = require("which-key")
 wk.register({ ["<leader>ff"] = { "<cmd>builtin.find_files<cr>", "Find Files Using Telescope" } })
@@ -16,6 +17,7 @@ wk.register({
       g = { "<cmd>Telescope grep_string<cr>", "Find Word Under Cursor" },
       l = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
       p = { "<cmd>Telescope projects<cr>", "Find Projects" },
+      k = { "<cmd>Telescope keymaps<cr>", "Find Keymaps" },
     },
   },
 })
