@@ -28,6 +28,27 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+-- NeoVid
+if vim.g.neovide then
+  vim.g.neovide_scale_factor = 0.6
+  vim.g.neovide_padding_top = 20
+  vim.g.neovide_padding_bottom = 20
+  vim.g.neovide_padding_right = 20
+  vim.g.neovide_padding_left = 20
+
+  vim.g.neovide_floating_blur_amount_x = 2.0
+  vim.g.neovide_floating_blur_amount_y = 2.0
+
+  vim.g.neovide_scroll_animation_length = 0.3
+  vim.g.neovide_hide_mouse_when_typing = true
+
+  vim.g.neovide_cursor_vfx_mode = "railgun"
+  vim.g.neovide_cursor_vfx_particle_lifetime = 2
+  vim.g.neovide_cursor_vfx_particle_speed = 4.0
+  vim.g.neovide_cursor_vfx_particle_density = 10
+  vim.g.neovide_cursor_vfx_particle_phase = 20
+  vim.g.neovide_cursor_vfx_particle_curl = 0.4
+end
 --vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "

@@ -26,6 +26,14 @@ vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Sav
 if vim.g.neovide then
   local map = vim.keymap.set
 
+  vim.g.neovide_padding_top = 20
+  vim.g.neovide_padding_bottom = 20
+  vim.g.neovide_padding_right = 20
+  vim.g.neovide_padding_left = 20
+
+  vim.g.neovide_floating_blur_amount_x = 2.0
+  vim.g.neovide_floating_blur_amount_y = 2.0
+
   local function neovideScale(amount)
     local temp = vim.g.neovide_scale_factor + amount
 

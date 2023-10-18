@@ -18,6 +18,11 @@ wk.register({
       l = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
       p = { "<cmd>Telescope projects<cr>", "Find Projects" },
       k = { "<cmd>Telescope keymaps<cr>", "Find Keymaps" },
+
+      m = {
+        name = "Misc",
+        e = { "<cmd>Telescope symbols<cr>", "Find Symbols" },
+      },
     },
   },
 })
