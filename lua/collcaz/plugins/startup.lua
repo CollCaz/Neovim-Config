@@ -43,9 +43,9 @@ local settings = {
     content = {
       { " Find File", "Telescope find_files", "f" },
       { " Find Projects", "Telescope projects", "p" },
+      { "ﴬ Find Notes", "Telekaste find_notes", "n" },
       { " File Browser", "Oil", "e" },
       { " Recent Files", "Telescope oldfiles", "r" },
-      { " New File", "lua require'startup'.new_file()", "f" },
       { " Nvim Config", "e /home/coll/.config/nvim/init.lua", "c" },
       { " quit", "quit", "q" },
     },
@@ -60,8 +60,11 @@ local settings = {
     fold_section = false,
     title = "Footer",
     margin = 5,
-    content = { "NeoVim" },
-    highlight = "Number",
+    content = function()
+      local editor = vim.g.neovide and "NeoVide" or "NeoVim"
+      return { editor }
+    end,
+    highlight = "Statement",
     default_color = "",
     oldfiles_amount = 0,
   },

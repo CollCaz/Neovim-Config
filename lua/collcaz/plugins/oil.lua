@@ -6,5 +6,6 @@ return {
 
   config = function()
     require("oil").setup()
+    vim.keymap.set("n", "<leader>fe", "<cmd>Oil<cr>", { desc = "File Explorer" })
   end,
 }
