@@ -35,7 +35,7 @@ if vim.g.neovide then
   vim.g.neovide_padding_bottom = 20
   vim.g.neovide_padding_right = 20
   vim.g.neovide_padding_left = 20
-
+  vim.o.guifont = "JetBrains Mono"
   vim.g.neovide_floating_blur_amount_x = 2.0
   vim.g.neovide_floating_blur_amount_y = 2.0
 

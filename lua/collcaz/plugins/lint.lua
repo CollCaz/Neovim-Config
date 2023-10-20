@@ -9,7 +9,7 @@ return {
 
     lint.linters_by_ft = {
       gdscript = { "gdlint" },
-      lua = { "luacheck" },
+      --lua = { "luacheck" },
     }
 
     local lint_augroup = vim.api.nvim_create_augroup("lin", { clear = true })
