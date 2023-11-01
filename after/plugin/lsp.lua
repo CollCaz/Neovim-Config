@@ -65,7 +65,7 @@ lsp_zero.on_attach(function(client, bufnr)
   wk.register({
     ["<leader>vws"] = {
       function()
-        vim.lsp.buf.workspace_symbol()
+        vim.lsp.buf.workspace_symbol("")
       end,
       "List Workspace Symbols",
     },

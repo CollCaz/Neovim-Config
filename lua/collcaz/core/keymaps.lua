@@ -23,7 +23,8 @@ vim.keymap.set("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
 
 -- quit
-vim.keymap.set({ "n" }, "<leader>qq", "<cmd>q<cr>", { desc = "Quit" })
+vim.keymap.set({ "n" }, "<leader>qq", "<cmd>q<cr>", { desc = "Close Window" })
+vim.keymap.set({ "n" }, "<leader>qb", "<cmd>bd<cr>", { desc = "Close Buffer" })
 
 -- NeoVide
 if vim.g.neovide then

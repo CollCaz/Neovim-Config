@@ -1,10 +1,15 @@
 ---@diagnostic disable-next-line: unused-local
 --local builtin = require("telescope.builtin")
+--
+require("telescope").setup({
+  defaults = {
+    winblend = 50 and vim.g.neovide or 10,
+  },
+})
 
 require("telescope").load_extension("file_browser")
 require("telescope").load_extension("find_pickers")
 require("telescope").load_extension("media_files")
-
 --require("telescope").load_extension("notify")
 
 local wk = require("which-key")

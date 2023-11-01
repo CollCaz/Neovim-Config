@@ -9,12 +9,14 @@ return {
       ensure_installed = {
 
         -- you can pin a tool to a particular version
-        { "golangci-lint", version = "v1.47.0" },
+        --{ "golangci-lint", version = "v1.47.0" },
 
         -- you can turn off/on auto_update per tool
         { "bash-language-server", auto_update = true },
+        { "gdtoolkit", auto_update = true },
 
         "lua-language-server",
+        "go",
         "marksman",
         "vim-language-server",
         "luacheck",

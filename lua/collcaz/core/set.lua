@@ -35,10 +35,10 @@ if vim.g.neovide then
   vim.g.neovide_padding_bottom = 20
   vim.g.neovide_padding_right = 20
   vim.g.neovide_padding_left = 20
-  vim.o.guifont = "FiraCode Nerd Font Mono:4h"
+  vim.o.guifont = "FiraCode Nerd Font Mono"
 
-  vim.g.neovide_floating_blur_amount_x = 2.0
-  vim.g.neovide_floating_blur_amount_y = 2.0
+  vim.g.neovide_floating_blur_amount_x = 0.6
+  vim.g.neovide_floating_blur_amount_y = 0.6
 
   vim.g.neovide_scroll_animation_length = 0.3
   vim.g.neovide_hide_mouse_when_typing = true
