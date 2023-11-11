@@ -9,6 +9,7 @@ return {
 
     lint.linters_by_ft = {
       gdscript = { "gdlint" },
+      go = { "golangcilint" },
       --lua = { "luacheck" },
     }
 

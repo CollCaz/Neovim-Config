@@ -1,4 +1,4 @@
---- Uncomment these if you want to manage LSP servers from neovim
+--- Uncomment these if you want to manage LSP servers from neovimlsp
 -- {'williamboman/mason.nvim'},
 -- {'williamboman/mason-lspconfig.nvim'},
 return {

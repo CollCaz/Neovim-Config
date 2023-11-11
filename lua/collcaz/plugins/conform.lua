@@ -23,6 +23,8 @@ return {
       gdscript = { "gdformat" },
       python = { "isort", "black" },
       javascript = { { "prettierd", "prettier" } },
+      html = { { "prettierd", "prettier" } },
+      go = { "gofumpt" },
     },
     -- Set up format-on-save
     format_on_save = { timeout_ms = 500, lsp_fallback = true },

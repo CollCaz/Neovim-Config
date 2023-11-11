@@ -17,6 +17,7 @@ wk.register({ ["<leader>ff"] = { "<cmd>builtin.find_files<cr>", "Find Files Usin
 wk.register({
   ["<leader>"] = {
     f = {
+      a = { "<cmd>Telescope find_pickers<cr>", "All Pickers" },
       f = { "<cmd>Telescope find_files<cr>", "Find File" },
       r = { "<cmd>Telescope oldfiles<cr>", "Find Recent File" },
       b = { "<cmd>Telescope buffers<cr>", "Find Buffer" },
@@ -25,7 +26,7 @@ wk.register({
       l = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
       p = { "<cmd>Telescope projects<cr>", "Find Projects" },
       k = { "<cmd>Telescope keymaps<cr>", "Find Keymaps" },
-      a = { "<cmd>Telescope find_pickers<cr>", "All Pickers" },
+      d = { "<cmd>Telescope diagnostics<cr>", "Find Diagnostics" },
     },
   },
 })

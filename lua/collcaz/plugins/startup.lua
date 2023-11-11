@@ -42,7 +42,6 @@ local settings = {
     content = {
       { " Find File", "Telescope find_files", "f" },
       { " Find Projects", "Telescope projects", "p" },
-      { "ﴬ Find Notes", "Telekaste find_notes", "n" },
       { " File Browser", "Oil", "e" },
       { " Recent Files", "Telescope oldfiles", "r" },
       { " Nvim Config", "e /home/coll/.config/nvim/init.lua", "c" },
