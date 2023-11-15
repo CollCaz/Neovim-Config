@@ -16,7 +16,7 @@ return {
         { "gdtoolkit", auto_update = true },
 
         "lua-language-server",
-        "go",
+        "gopls",
         "marksman",
         "vim-language-server",
         "luacheck",

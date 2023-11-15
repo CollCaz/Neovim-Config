@@ -25,6 +25,7 @@ return {
       javascript = { { "prettierd", "prettier" } },
       html = { { "prettierd", "prettier" } },
       go = { "gofumpt" },
+      bash = { "bash-language-server" },
     },
     -- Set up format-on-save
     format_on_save = { timeout_ms = 500, lsp_fallback = true },
