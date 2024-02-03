@@ -86,12 +86,19 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
     "marksman",
+    "clangd",
+    "yamlls",
   },
   handlers = {
     lsp_zero.default_setup,
   },
 })
+require("lspconfig").ols.setup({})
+require("lspconfig").csharp_ls.setup({})
+require("lspconfig").clangd.setup({})
 require("lspconfig").sqlls.setup({})
+require("lspconfig").yamlls.setup({})
+require("lspconfig").dartls.setup({})
 require("lspconfig").gdscript.setup({})
 require("lspconfig").lua_ls.setup({
   settings = {
