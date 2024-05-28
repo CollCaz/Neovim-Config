@@ -18,7 +18,11 @@ return {
     config = function()
       local servers = {
         clangd = {},
+        nushell = {},
+        templ = {},
         gopls = {},
+        dartls = {},
+        basedpyright = {},
         tsserver = {
           init_options = {
             plugins = {
