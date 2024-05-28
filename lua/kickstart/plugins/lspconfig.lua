@@ -19,6 +19,32 @@ return {
       local servers = {
         clangd = {},
         gopls = {},
+        tsserver = {
+          init_options = {
+            plugins = {
+              {
+                name = "@vue/typescript-plugin",
+                location = "/usr/local/lib/node_modules/@vue/typescript-plugin",
+                languages = { "javascript", "typescript", "vue" },
+              },
+            },
+          },
+          filetypes = {
+            "javascript",
+            "typescript",
+            "vue",
+          },
+        },
+        volar = {
+          init_options = {
+            --filetypes = { "vue", "typescript", "javascript" },
+            typescript = {
+              tsdk = '/usr/lib/node_modules/typescript/lib/'
+              -- Alternative location if installed as root:
+              -- tsdk = '/usr/local/lib/node_modules/typescript/lib'
+            },
+          },
+        },
 
         lua_ls = {
           cmd = { 'lua-language-server' },
