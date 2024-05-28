@@ -45,6 +45,7 @@ return {
             },
           },
         },
+        nixd = {},
 
         lua_ls = {
           cmd = { 'lua-language-server' },
