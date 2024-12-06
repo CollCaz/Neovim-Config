@@ -49,7 +49,14 @@ return {
             },
           },
         },
-        nixd = {},
+        nixd = {
+          nixpkgs = {
+            expr = "import <nixpkgs> { }"
+          },
+          formatting = {
+            command = { "nixpkgs-fmt" }
+          },
+        },
 
         lua_ls = {
           cmd = { 'lua-language-server' },
