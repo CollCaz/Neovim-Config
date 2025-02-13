@@ -23,6 +23,7 @@ return {
         gopls = {},
         dartls = {},
         basedpyright = {},
+        tailwindcss = {},
         ts_ls = {},
         volar = {
           init_options = {
