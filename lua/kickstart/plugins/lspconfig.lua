@@ -22,6 +22,7 @@ return {
         templ = {},
         gopls = {},
         dartls = {},
+        tinymist = {},
         basedpyright = {},
         tailwindcss = {},
         ts_ls = {},
