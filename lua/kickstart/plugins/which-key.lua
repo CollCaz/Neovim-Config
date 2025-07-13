@@ -38,9 +38,9 @@ return {
         { "", desc = "<leader>s_",  hidden = true },
       }
       -- visual mode
-      require('which-key').register({
-        ['<leader>h'] = { 'Git [H]unk' },
-      }, { mode = 'v' })
+      require('which-key').register {
+        { "<leader>h", desc = "Git [H]unk", mode = "v" },
+      }
     end,
   },
 }
